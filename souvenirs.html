@@ -8,90 +8,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <style>
-            body {
-                background-color: cornsilk;
-            }
-            .container {
-  position: relative;
-  width: 50%;
-}
+    <style>
+        body {
+            background-color: cornsilk;
+        }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+        .container2 {
+            position: relative;
+            width: 50%;
+        }
 
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  -webkit-transform:scale(0);
-  transition: .3s ease;
-}
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
 
-.container:hover .overlay {
-  transform: scale(1)
-}
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            -webkit-transform: scale(0);
+            transition: .3s ease;
+        }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-        </style>
+        .container2:hover .overlay {
+            transform: scale(1)
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .main-content{
+            overflow: auto;
+        }
+        .hit{
+            color: red;
+        }
+    </style>
 
 </head>
 
 <body>
     <div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <a href="index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                 <svg class="bi me-2" width="40" height="32">
                     <use xlink:href="#bootstrap"></use>
                 </svg>
-				<span class="fs-4">The Opera and Ballet Theater</span>
-			</a>
+                <span class="fs-4">The Opera and Ballet Theater</span>
+            </a>
 
-			<ul class="nav nav-pills">
-				<li class="nav-item">
-					<a href="index.html" class="nav-link active" aria-current="page">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-							<path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-							<path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-						  </svg>
-					</a>
-				</li>
-				<li class="nav-item"><a href="theater_history.html" class="nav-link">Theater history</a></li>
-				<li class="nav-item"><a href="theater_architecture.html" class="nav-link">Тheater architecture</a></li>
-				<li class="nav-item"><a href="souvenirs.html" class="nav-link">Souvenirs</a></li>
-				<li class="nav-item"><a href="repertoire.html" class="nav-link">Repertoire</a></li>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active" aria-current="page">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                            <path fill-rule="evenodd"
+                                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item"><a href="theater_history.html" class="nav-link">Theater history</a></li>
+                <li class="nav-item"><a href="theater_architecture.html" class="nav-link">Тheater architecture</a></li>
+                <li class="nav-item"><a href="souvenirs.html" class="nav-link">Souvenirs</a></li>
+                <li class="nav-item"><a href="repertoire.html" class="nav-link">Repertoire</a></li>
             </ul>
         </header>
 
-        <p>On September 22, 2007, the Ukrainian Post held a special cancellation of envelopes dedicated to the 120th anniversary of the theatre. The National Bank of Ukraine, continuing the series "Architectural Monuments of Ukraine", put into circulation on July 25, 2007 commemorative coins "120 years of the Odessa State Academic Opera and Ballet Theater" in denominations of 10 and 5 hryvnias. The obverse of the 10 hryvnia coin depicts the interior of the hall for spectators. The obverse of the 5 hryvnia coin depicts a scene from a ballet. The reverse of both coins depicts the theater building, under which there is an inscription: “120 years”. Around the coin - "Odessa National Academic Opera and Ballet Theatre". Both inscriptions are typed in capital letters.
-            Coin artists: Vladimir Taran, Sergey Kharuk, Alexander Kharuk and Vladimir Atamanchuk; sculptors: Svyatoslav Ivanenko, Vladimir Demyanenko and Vladimir Atamanchuk</p>
-
-            <div class="container">
+        <div class="main-content">
+            <p>
+            <div class="container2 rounded float-start me-3">
                 <img src="images/Souvenirs.jpg" alt="Avatar" class="image">
-               <div class="overlay">
-                  <div class="text">Postage Stamp</div>
+                <div class="overlay">
+                    <div class="text"><img src="images/fuck_russ_ship_ukrposhta.jpg" alt=""></div>
                 </div>
-              </div>
-        
+            </div>
+            On September 22, 2007, the Ukrainian Post held a special cancellation of envelopes dedicated to the 120th
+            anniversary of the theatre.The National Bank of Ukraine, continuing the series "Architectural Monuments of
+            Ukraine", put into circulation on July 25, 2007 commemorative coins "120 years of the Odessa State Academic
+            Opera and Ballet Theater" in denominations of 10 and 5 hryvnias. The obverse of the 10 hryvnia coin depicts
+            the interior of the hall for spectators. The obverse of the 5 hryvnia coin depicts a scene from a ballet.
+            The reverse of both coins depicts the theater building, under which there is an inscription: “120 years”.
+            Around the coin - "Odessa National Academic Opera and Ballet Theatre". Both inscriptions are typed in
+            capital letters.
+            Coin artists: Vladimir Taran, Sergey Kharuk, Alexander Kharuk and Vladimir Atamanchuk; sculptors: Svyatoslav
+            Ivanenko, Vladimir Demyanenko and Vladimir Atamanchuk</p>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hand-index-fill"
+            viewBox="0 0 16 16" >
+            <path fill="#FF0000"
+                d="M8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v5.34l-1.2.24a1.5 1.5 0 0 0-1.196 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002z" />
+        </svg>
+        <span class="hit"> Hover the envelope!!!</span>
+        </div>
 
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
